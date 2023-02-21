@@ -104,6 +104,15 @@ background-position: center;
     color: white;
 }
 
+.vl {
+    border-left: 3px solid white;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 1000px;
+}
+
 
 
 /* .container {
