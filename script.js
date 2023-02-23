@@ -61,13 +61,9 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-    'Neo,',
-    'sooner or later',
-    'you\'re going to realize',
-    'just as I did',
-    'that there\'s a difference',
-    'between knowing the path',
-    'and walking the path'
+    'AKWAABA',
+    'AMARAABA',
+    'WELCOME'
 ]
 
 const el = document.querySelector('.hero-text')
@@ -82,3 +78,23 @@ const next = () => {
 }
 
 next()
+
+
+
+//SLIDER
+const slides = document.querySelectorAll('.slide')
+
+for (const slide of slides) {
+    slide.addEventListener('click', () => {
+        clearActiveClasses()
+
+
+        slide.classList.add('active')
+    })
+}
+
+function clearActiveClasses() {
+    slides.forEach((slide) => {
+        slide.classList.remove('active')
+    })
+}
